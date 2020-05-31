@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `iwp`
+-- Database: `E-Learning`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +41,8 @@ CREATE TABLE `blind` (
 --
 
 INSERT INTO `blind` (`name`, `age`, `USERNAME`, `PASSWORD`, `dob`) VALUES
-('devandra', 20, 'devandra', 'password', '2019-11-08'),
-('rishi', 20, 'rishi', 'password', '2019-11-20');
+('parameswar', 20, 'parameswarkanuparthi', '12345', '2019-11-21'),
+('praneeth', 20, 'praneethkaliki', '12345', '2019-03-26');
 
 -- --------------------------------------------------------
 
@@ -95,7 +95,7 @@ CREATE TABLE `COURSES` (
 --
 
 INSERT INTO `COURSES` (`COURSECODE`, `COURSENAME`) VALUES
-('cse2006', 'micro'),
+('cse4020', 'Machine_Learning'),
 ('CSE3001', 'IWP'),
 ('CSE3002', 'DBMS');
 
@@ -115,9 +115,9 @@ CREATE TABLE `COURSETEACHER` (
 --
 
 INSERT INTO `COURSETEACHER` (`COURSECODE`, `TEACHER`) VALUES
-('CSE3002', 'Nalini_iwp'),
-('CSE3001', 'Nalini_iwp'),
-('CSE3002', 'Nalini_iwp');
+('CSE3002', 'LokeshKumar'),
+('CSE3001', 'LokeshKumar'),
+('CSE3002', 'LokeshKumar');
 
 -- --------------------------------------------------------
 
@@ -140,8 +140,8 @@ CREATE TABLE `STUDENT` (
 --
 
 INSERT INTO `STUDENT` (`NAME`, `AGE`, `TYPE`, `USERNAME`, `PASSWORD`, `DOB`, `COURSES`) VALUES
-('manumanoj0010', 32, 'DEAF', 'manumanoj0010', 'password', '0000-00-00', '0'),
-('manumanoj0010', 32, 'DEAF', 'manumanoj', 'password', '0000-00-00', '0');
+('parameswar', 20, 'DEAF', 'param123', '1345', '1999-11-21', '0'),
+('praneeth', 20, 'DEAF', 'praneeth', '1345', '1999-03-26', '0');
 
 -- --------------------------------------------------------
 
@@ -183,7 +183,7 @@ CREATE TABLE `TEACHER` (
 --
 
 INSERT INTO `TEACHER` (`NAME`, `AGE`, `USERNAME`, `PASSWORD`, `DOB`) VALUES
-('Nalini', 32, 'Nalini_iwp', 'password', '0000-00-00');
+('LokeshKumar', 35, 'Lokesh', '12345', '0000-00-00');
 
 -- --------------------------------------------------------
 
